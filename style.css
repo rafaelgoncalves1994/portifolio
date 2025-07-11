@@ -5,12 +5,12 @@
 }
 
 body {
-  background-image: url('./images/fundo-preto-abstrato-da-grade-digital.jpg'); /* Caminho da sua imagem */
-  background-size: cover;       /* Cobre toda a tela */
-  background-position: center;  /* Centraliza */
-  background-repeat: no-repeat; /* Não repete */
-  background-attachment: fixed; /* Efeito parallax leve (opcional) */
-  color: #fff;                  /* Garante contraste no texto */
+  background-image: url('./images/fundo-preto-abstrato-da-grade-digital.jpg'); 
+  background-size: cover;      
+  background-position: center;  
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  color: #fff;                 
   font-family: 'Segoe UI', sans-serif;
 }
 
