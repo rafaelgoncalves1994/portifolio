@@ -53,6 +53,43 @@ nav img:hover {
   margin: 60px 0;
 }
 
+#hero h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  background: linear-gradient(
+    200deg,
+    #00f5a0, 
+    #00d9f5, 
+    #0088ff, 
+    #2be2ba, 
+    #9787f0, 
+    #ff8c00  
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+#hero p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  background: linear-gradient(
+    135deg,
+    #00f5a0, 
+    #00d9f5, 
+    #0088ff, 
+    #2be2ba, 
+    #9787f0, 
+    #ff8c00   
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+
 .cards-container {
   display: flex;
   gap: 20px;
@@ -67,7 +104,7 @@ nav img:hover {
   height: 180px;
   background: #1e1e1e;
   border-radius: 15px;
-  box-shadow: 0 6px 12px rgba(0, 255, 209, .15);
+  box-shadow: 0 6px 12px rgba(0, 255, 209, 0.149);
   perspective: 1000px;
   transform-style: preserve-3d;
 
@@ -110,6 +147,18 @@ nav img:hover {
 .card-content h3 {
   font-size: 2.5em;
   margin-bottom: 10px;
+  background: linear-gradient(135deg, #00f5a0, 
+    #00d9f5, 
+    #0088ff, 
+    #2be2ba, 
+    #9787f0, 
+    #ff8c00 );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+   white-space: nowrap;
+  overflow: hidden;
 }
 
 .card-link {
