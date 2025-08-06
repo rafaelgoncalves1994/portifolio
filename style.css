@@ -71,14 +71,13 @@ nav img:hover {
   perspective: 1000px;
   transform-style: preserve-3d;
 
-  /* animação de entrada */
   opacity: 0;
   transform: translateY(2rem);
   animation: appear 1s forwards;
   transition:
     transform .3s ease,
     box-shadow .3s ease,
-    border .3s ease;     /* inclui borda no tween */
+    border .3s ease;     
 }
 
 @keyframes appear {
@@ -89,15 +88,12 @@ nav img:hover {
 }
 
 .card:hover {
-  /* ✅ sobe ligeiramente e cresce de leve */
   transform: translateY(-15px) scale(1.08);
-
-  /* glow neon consistente */
   border: 2px solid #095c58;
   box-shadow:
     0 0 12px #095c58,
     0 0 24px #095c58,
-    0 8px 16px rgba(0, 0, 0, .3);  /* sombra de elevação */
+    0 8px 16px rgba(0, 0, 0, .3);  
 }
 
 
@@ -179,7 +175,7 @@ footer {
   text-shadow: 0 0 6px #00ffd5;
 }
 
-.sobre-container {
+/* .sobre-container {
   background: #1e1e1e;
   border: 2px solid #095c58;
   border-radius: 12px;
@@ -193,13 +189,13 @@ footer {
   opacity: 0;
   transform: translateY(2rem);
   animation: appear 1s forwards;
-}
+} */
 
-.sobre-container:hover {
+/* .sobre-container:hover {
   transform: translateY(-8px) scale(1.03);
   border: 2px solid #00ffd5;
   box-shadow: 0 0 12px #00ffd5, 0 0 24px #00ffd5;
-}
+} */
 
 .sobre-container h1 {
   text-align: center;
@@ -211,7 +207,10 @@ footer {
 .sobre-container p {
   margin-bottom: 18px;
   line-height: 1.7;
-  font-size: 1.3em;
+  font-weight: 400;
+  font-size: 1.5em;
+  margin: 30px auto;
+  max-width: 55em; 
 }
 
 .sobre-container strong {
