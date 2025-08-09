@@ -5,7 +5,7 @@
 }
 
 body {
-  background-image: url('./images/fundo-preto-abstrato-da-grade-digital.jpg'); 
+  background-image: url('./images/imagem\ de\ fundo.png'); 
   background-size: cover;      
   background-position: center;  
   background-repeat: no-repeat;
@@ -281,4 +281,21 @@ footer {
   height: 30px;
   margin-left: 0px;
   
+}
+
+.tech-icons {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.tech-icons img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.2s ease;
+}
+
+.tech-icons img:hover {
+  transform: scale(1.2);
 }
