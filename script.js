@@ -22,3 +22,15 @@ function initCardTilt() {
     });
   });
 }
+
+function animarBarrasDeHabilidades() {
+  document.querySelectorAll(".skill-progress").forEach((bar) => {
+    const progress = bar.getAttribute("data-progress");
+    bar.style.width = progress + "%";
+  });
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  initCardTilt();
+  animarBarrasDeHabilidades();
+});
