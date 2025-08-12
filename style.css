@@ -181,7 +181,8 @@ footer {
   color: #666;
 }
 
-.projetos-h1{
+.projetos-h1,
+.minhas-habilidades{
    font-size: 2.8em;
   margin-bottom: 25px;
   color: #00ffd5;
@@ -304,15 +305,19 @@ footer {
   background: #1e1e1e;
   border: 2px solid #095c58;
   border-radius: 12px;
-  padding: 20px;
-  margin: 24px 0;
+  padding: 50px;
+  margin: 70px 0;
   box-shadow: 0 6px 12px rgba(0, 255, 209, 0.15);
   color: #eee;
   transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
   opacity: 0;
   transform: translateY(2rem);
   animation: appear 1s forwards;
-  max-width: 900px;
+  width: 90%;
+  min-height: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+  gap: 40px;
     }
 
 .skill {
@@ -320,30 +325,39 @@ footer {
       background: rgba(255, 255, 255, 0.05);
       padding: 10px;
       border-radius: 10px;
+       transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
     }
 
-    .skill:hover {
-  animation: pulse 2s ease infinite;
-  cursor: pointer;
+.skill:hover {
+
+  transform: translateY(-6px); 
+  box-shadow: 0 12px 20px rgba(0, 255, 209, 0.3);
+
 }
-    .skill-header {
+   
+.skill-header {
       display: flex;
       align-items: center;
       justify-content: space-between;
     }
-    .skill-icon {
+    
+.skill-icon {
       width: 30px;
       height: 30px;
     }
-    .skill-name {
+    
+.skill-name {
       flex: 1;
       margin-left: 10px;
       font-weight: bold;
     }
+
     .skill-level {
       font-size: 14px;
       color: #0d8882;
     }
+    
     .skill-bar {
       background-color: #333;
       border-radius: 8px;
@@ -351,6 +365,7 @@ footer {
       height: 12px;
       margin-top: 8px;
     }
+    
     .skill-progress {
       height: 100%;
        background: linear-gradient(135deg, #00f5a0, 
@@ -362,6 +377,7 @@ footer {
       width: 0%;
       transition: width 1s ease;
     }
+    
     .skill-xp {
       font-size: 12px;
       color: #0d8882;
