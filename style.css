@@ -96,6 +96,9 @@ nav img:hover {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 20px;
+  max-width: calc((280px * 2) + 20px); 
+  margin-left: auto;
+  margin-right: auto;
   
 }
 
@@ -107,14 +110,14 @@ nav img:hover {
   box-shadow: 0 6px 12px rgba(0, 255, 209, 0.149);
   perspective: 1000px;
   transform-style: preserve-3d;
-
   opacity: 0;
   transform: translateY(2rem);
   animation: appear 1s forwards;
   transition:
     transform .3s ease,
     box-shadow .3s ease,
-    border .3s ease;     
+    border .3s ease;   
+      
 }
 
 @keyframes appear {
@@ -133,7 +136,6 @@ nav img:hover {
     0 8px 16px rgba(0, 0, 0, .3);  
 }
 
-
 .card-content {
   height: 100%;
   padding: 20px;
@@ -143,6 +145,18 @@ nav img:hover {
   align-items: center;     
   text-align: center;
 }
+
+
+@media (max-width: 600px) {
+  .cards-container {
+    max-width: 100%; 
+  }
+  .card {
+    width: 100%; 
+    max-width: none;
+  }
+}
+
 
 .card-content h3 {
   font-size: 2.5em;
