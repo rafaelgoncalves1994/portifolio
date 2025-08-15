@@ -399,3 +399,21 @@ footer {
       font-size: 12px;
       color: #0d8882;
     }
+
+    #btn-detalhes {
+    color: #00ffd5;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  border: #1e1e1e;
+  border-radius: 5px;
+  padding: 10px 20px;
+  background: #1e1e1e; 
+  
+    }
+
+#btn-detalhes:hover {
+  color: #ffffff;
+  text-shadow: 0 0 6px #00ffd5;
+  transform: translateY(-1.5px);
+}
