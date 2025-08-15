@@ -34,3 +34,18 @@ document.addEventListener("DOMContentLoaded", () => {
   initCardTilt();
   animarBarrasDeHabilidades();
 });
+
+  document
+    .getElementById("btn-detalhes")
+    .addEventListener("click", function () {
+      const container = document.querySelector(".iframe-container");
+
+
+      if (container.style.display === "none") {
+        container.style.display = "block";
+        this.textContent = "Ocultar Detalhes"; // Muda o texto do botão
+      } else {
+        container.style.display = "none";
+        this.textContent = "Mais Detalhes";
+      }
+    });

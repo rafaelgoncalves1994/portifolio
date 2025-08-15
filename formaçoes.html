@@ -1,7 +1,8 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>formações</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -10,23 +11,31 @@
     <a  href="index.html"><img class="Voltar"src="./icons/icons8-voltar-16.png" alt="←voltar"></a>
   </header>
   <main>
+    <h1 class="formações-h1">Formações</h1>
 
-     <h1 class="projetos-h1">Meus Projetos</h1>
+    <div class="formação-container">
+      <h3>Formação em Análise e Desenvolvimento de Sistemas</h3>
+      <p>Curso superior focado em análise, desenvolvimento e gestão de sistemas de informação. Aprendi a programar em diversas linguagens, incluindo Python, kotlin e SQL, além de adquirir conhecimentos em banco de dados, engenharia de software e metodologias ágeis.</p>
+      <p><strong>Instituição:</strong>UniFOA - Centro Universitário de Volta Redonda</p>
+      <p><strong>Duração:</strong> 2.5 anos(cursando) </p>
+    
+      <button id="btn-detalhes">Mais Detalhes</button>
 
-     <div class="projeto-container">
-      <h3>Portfólio Dev</h3>
-      <p>Este Portfólio contém meu portfólio pessoal.
-      O objetivo é apresentar minhas habilidades, experiências e projetos de forma simples e objetiva. <span class="tech-icons">
-    <img src="./icons/html-5-svgrepo-com.svg" alt="HTML5">
-    <img src="./icons/css-3-svgrepo-com.svg" alt="CSS3">
-    <img src="./icons/javascript-logo-svgrepo-com.svg" alt="JavaScript">
-    </span></p>
-    <a href="https://github.com/rafaelgoncalves1994/portifolio" target="_blank">🔗 Ver no GitHub</a>
-  </div>
+<!-- Iframe escondido inicialmente -->
+<div class="iframe-container" style="display: none; margin-top: 15px;">
+    <iframe 
+    src="tabela.html" 
+    width="100%" 
+    height="400" 
+    style="border: 1px solid #ccc;">
+</iframe>
 
+</div>
+      
     </div>
-
+    
+   
   </main>
-
+<script src="script.js"></script>
 </body>
-</html> -->
+</html>
