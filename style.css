@@ -5,10 +5,13 @@
   padding: 0;
 }
 
+html{font-size: 100%;}
+
 /* Layout base */
 body {
   background: url('./images/imagem de fundo.png') center / cover no-repeat fixed;
   color: #fff;
+  padding: 0 15px;
   font-family: 'Segoe UI', sans-serif;
 }
 
@@ -143,16 +146,28 @@ nav img:hover {
   cursor: pointer;
 }
 
-/* Responsividade */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .cards-container {
+    display: flex;
+    flex-direction: column; /
+    width: 100%;
     max-width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
   }
+
   .card {
     width: 100%;
-    max-width: none;
+    max-width: 350px; 
+    height: auto;     
+    min-height: 180px; 
+    margin-bottom: 20px;
   }
 }
+
+
+
+
 
 /* Rodapé */
 footer {
