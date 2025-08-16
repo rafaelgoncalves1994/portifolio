@@ -149,7 +149,7 @@ nav img:hover {
 @media (max-width: 768px) {
   .cards-container {
     display: flex;
-    flex-direction: column; /
+    flex-direction: column;
     width: 100%;
     max-width: 100%;
     padding: 0 15px;
