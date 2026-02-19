@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (container.style.display === "none") {
         container.style.display = "block";
-        this.textContent = "Ocultar Detalhes"; // Muda o texto do botão
+        this.textContent = "Ocultar Detalhes"; 
       } else {
         container.style.display = "none";
         this.textContent = "Mais Detalhes";
