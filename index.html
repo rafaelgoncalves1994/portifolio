@@ -1,331 +1,547 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rafael Gonçalves | Desenvolvedor Full Stack</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-</head>
-<body class="dark-theme">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Rafael Gonçalves | Desenvolvedor Full Stack</title>
+    <link
+      rel="stylesheet"
+      href="style.css"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body class="dark-theme">
+    <div class="bg-orb orb1"></div>
+    <div class="bg-orb orb2"></div>
 
+    <!-- NAV -->
+    <nav id="navbar">
+      <div class="nav-container">
+        <a
+          href="#home"
+          class="nav-logo"
+          >Rafael<span>.</span></a
+        >
 
-  <div class="bg-orb orb1"></div>
-  <div class="bg-orb orb2"></div>
+        <ul
+          class="nav-links"
+          id="navLinks"
+        >
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#stack">Stack</a></li>
+          <li><a href="#projects">Projetos</a></li>
+          <li><a href="#formation">Formação</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
 
-  <!-- NAV -->
-  <nav id="navbar">
-    <div class="nav-container">
-      <a href="#home" class="nav-logo">Rafael<span>.</span></a>
-
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#about">Sobre</a></li>
-        <li><a href="#stack">Stack</a></li>
-        <li><a href="#projects">Projetos</a></li>
-        <li><a href="#formation">Formação</a></li>
-        <li><a href="#contact">Contato</a></li>
-      </ul>
-
-      <div class="nav-right">
-        <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
-          <i class="fas fa-moon" id="themeIcon"></i>
-        </button>
-        <button class="hamburger" id="hamburger" aria-label="Menu">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
-    </div>
-  </nav>
-
-  
-  <section class="hero" id="home">
-    <div class="hero-text reveal">
-      <div class="hero-badge">
-        <span class="badge-dot"></span>
-        Disponível para oportunidades
-      </div>
-      <h1>Olá, sou <span class="grad">Rafael<br>Gonçalves</span></h1>
-      <p class="hero-sub">Desenvolvedor Full Stack em formação — criando soluções simples, elegantes e funcionais.</p>
-      <div class="hero-btns">
-        <a href="Rafael (curriculo at).pdf" class="btn-primary"><i class="fas fa-download"></i> Download CV</a>
-        <a href="#projects" class="btn-ghost">Ver Projetos</a>
-      </div>
-    </div>
-
-    <div class="hero-img reveal">
-      <div class="hero-img-ring">
-        <img src="/images/fael.png" alt="Foto de Rafael Gonçalves">
-      </div>
-      <div class="hero-social">
-        <a href="https://github.com/rafaelgoncalves1994/" target="_blank" class="social-pill" aria-label="GitHub">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://linkedin.com/in/rafael-sergio-28b10132a" target="_blank" class="social-pill" aria-label="LinkedIn">
-          <i class="fab fa-linkedin-in"></i>
-        </a>
-        <a href="https://wa.me/5524998704925" target="_blank" class="social-pill" aria-label="WhatsApp">
-          <i class="fab fa-whatsapp"></i>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  
-  <section id="about">
-    <div class="container">
-      <div class="section-tag">Quem sou eu</div>
-      <h2>Sobre mim</h2>
-      <div class="divider"></div>
-      <div class="about-grid reveal">
-        <div class="glass-card">
-          <div class="card-icon"><i class="fas fa-map-marker-alt"></i></div>
-          <div class="card-label">Localização</div>
-          <div class="card-val">Volta Redonda, RJ</div>
-        </div>
-        <div class="glass-card">
-          <div class="card-icon"><i class="fas fa-graduation-cap"></i></div>
-          <div class="card-label">Graduação</div>
-          <div class="card-val">ADS — UniFOA (cursando)</div>
-        </div>
-        <div class="glass-card">
-          <div class="card-icon"><i class="fas fa-laptop-code"></i></div>
-          <div class="card-label">Foco</div>
-          <div class="card-val">Full Stack Developer</div>
-        </div>
-        <div class="glass-card">
-          <div class="card-icon"><i class="fas fa-bolt"></i></div>
-          <div class="card-label">Comunidade</div>
-          <div class="card-val">Impressionadora</div>
+        <div class="nav-right">
+          <button
+            class="theme-toggle"
+            id="themeToggle"
+            aria-label="Alternar tema"
+          >
+            <i
+              class="fas fa-moon"
+              id="themeIcon"
+            ></i>
+          </button>
+          <button
+            class="hamburger"
+            id="hamburger"
+            aria-label="Menu"
+          >
+            <span></span><span></span><span></span>
+          </button>
         </div>
       </div>
-      <p class="about-bio reveal">
-        Sou um desenvolvedor <strong>Full Stack em formação</strong>, apaixonado por tecnologia, inovação e pela criação de soluções inteligentes que resolvem problemas reais. Meu foco é desenvolver aplicações <strong>funcionais, responsivas e intuitivas</strong>, com atenção especial à experiência do usuário e às boas práticas de desenvolvimento. Acredito que a tecnologia deve ser <strong>acessível, eficiente e impactante</strong>.
-      </p>
-    </div>
-  </section>
+    </nav>
 
-  
-  <section id="stack">
-    <div class="container">
-      <div class="section-tag">Tecnologias</div>
-      <h2>My Stack</h2>
-      <div class="divider"></div>
-      <div class="stack-grid reveal">
-        <div class="stack-card">
-          <img src="./icons/html-5-svgrepo-com.svg" alt="HTML5" onerror="this.style.display='none'">
-          <span>HTML</span>
+    <section
+      class="hero"
+      id="home"
+    >
+      <div class="hero-text reveal">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Disponível para oportunidades
         </div>
-        <div class="stack-card">
-          <img src="./icons/css-3-svgrepo-com.svg" alt="CSS3" onerror="this.style.display='none'">
-          <span>CSS</span>
-        </div>
-        <div class="stack-card">
-          <img src="./icons/javascript-logo-svgrepo-com.svg" alt="JavaScript" onerror="this.style.display='none'">
-          <span>JavaScript</span>
-        </div>
-        <div class="stack-card">
-          <img src="./icons/nodejs-svgrepo-com.svg" alt="Node.js" onerror="this.style.display='none'">
-          <span>Node.js</span>
-        </div>
-        <div class="stack-card">
-          <img src="./icons/next-dot-js-svgrepo-com.svg" alt="Next.js" onerror="this.style.display='none'">
-          <span>Next.js</span>
-        </div>
-        <div class="stack-card">
-          <img src="./icons/react-svgrepo-com.svg" alt="React" onerror="this.style.display='none'">
-          <span>React</span>
-        </div>
-        <div class="stack-card">
-          <img src="./icons/python-svgrepo-com.svg" alt="Python" onerror="this.style.display='none'">
-          <span>Python</span>
-        </div>
-        <div class="stack-card">
-          <img src="./icons/flask-svgrepo-com.svg" alt="Flask" onerror="this.style.display='none'">
-          <span>Flask</span>
-        </div>
-        <div class="stack-card">
-          <img src="./icons/github.svg" alt="GitHub" onerror="this.style.display='none'">
-          <span>GitHub</span>
-        </div>
-        
-        <div class="stack-card">
-          <img src="./icons/tailwind-svgrepo-com.svg" alt="Tailwind CSS" onerror="this.style.display='none'">
-          <span>Tailwind CSS</span>
+        <h1>
+          Olá, sou <span class="grad">Rafael<br />Gonçalves</span>
+        </h1>
+        <p class="hero-sub">
+          Desenvolvedor Full Stack em formação — criando soluções simples,
+          elegantes e funcionais.
+        </p>
+        <div class="hero-btns">
+          <a
+            href="Rafael (curriculo at).pdf"
+            class="btn-primary"
+            ><i class="fas fa-download"></i> Download CV</a
+          >
+          <a
+            href="#projects"
+            class="btn-ghost"
+            >Ver Projetos</a
+          >
         </div>
       </div>
-    </div>
-  </section>
 
- 
-  <section id="projects">
-    <div class="container">
-      <div class="section-tag">O que construí</div>
-      <h2>Projetos</h2>
-      <div class="divider"></div>
-      <div class="projects-grid">
+      <div class="hero-img reveal">
+        <div class="hero-img-ring">
+          <img
+            src="/images/fael.png"
+            alt="Foto de Rafael Gonçalves"
+          />
+        </div>
+        <div class="hero-social">
+          <a
+            href="https://github.com/rafaelgoncalves1994/"
+            target="_blank"
+            class="social-pill"
+            aria-label="GitHub"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+          <a
+            href="https://linkedin.com/in/rafael-sergio-28b10132a"
+            target="_blank"
+            class="social-pill"
+            aria-label="LinkedIn"
+          >
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a
+            href="https://wa.me/5524998704925"
+            target="_blank"
+            class="social-pill"
+            aria-label="WhatsApp"
+          >
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+    </section>
 
-        <div class="project-card reveal">
-          <div class="proj-header">
-            <div class="proj-icon"><i class="fas fa-briefcase"></i></div>
-            <div class="proj-links-top">
-              <a href="https://github.com/rafaelgoncalves1994" target="_blank" class="proj-icon-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+    <section id="about">
+      <div class="container">
+        <div class="section-tag">Quem sou eu</div>
+        <h2>Sobre mim</h2>
+        <div class="divider"></div>
+        <div class="about-grid reveal">
+          <div class="glass-card">
+            <div class="card-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="card-label">Localização</div>
+            <div class="card-val">Volta Redonda, RJ</div>
+          </div>
+          <div class="glass-card">
+            <div class="card-icon"><i class="fas fa-graduation-cap"></i></div>
+            <div class="card-label">Graduação</div>
+            <div class="card-val">ADS — UniFOA (cursando)</div>
+          </div>
+          <div class="glass-card">
+            <div class="card-icon"><i class="fas fa-laptop-code"></i></div>
+            <div class="card-label">Foco</div>
+            <div class="card-val">Full Stack Developer</div>
+          </div>
+          <div class="glass-card">
+            <div class="card-icon"><i class="fas fa-bolt"></i></div>
+            <div class="card-label">Comunidade</div>
+            <div class="card-val">Impressionadora</div>
+          </div>
+        </div>
+        <p class="about-bio reveal">
+          Sou um desenvolvedor <strong>Full Stack em formação</strong>,
+          apaixonado por tecnologia, inovação e pela criação de soluções
+          inteligentes que resolvem problemas reais. Meu foco é desenvolver
+          aplicações <strong>funcionais, responsivas e intuitivas</strong>, com
+          atenção especial à experiência do usuário e às boas práticas de
+          desenvolvimento. Acredito que a tecnologia deve ser
+          <strong>acessível, eficiente e impactante</strong>.
+        </p>
+      </div>
+    </section>
+
+    <section id="stack">
+      <div class="container">
+        <div class="section-tag">Tecnologias</div>
+        <h2>My Stack</h2>
+        <div class="divider"></div>
+        <div class="stack-grid reveal">
+          <div class="stack-card">
+            <img
+              src="./icons/html-5-svgrepo-com.svg"
+              alt="HTML5"
+              onerror="this.style.display = 'none'"
+            />
+            <span>HTML</span>
+          </div>
+          <div class="stack-card">
+            <img
+              src="./icons/css-3-svgrepo-com.svg"
+              alt="CSS3"
+              onerror="this.style.display = 'none'"
+            />
+            <span>CSS</span>
+          </div>
+          <div class="stack-card">
+            <img
+              src="./icons/javascript-logo-svgrepo-com.svg"
+              alt="JavaScript"
+              onerror="this.style.display = 'none'"
+            />
+            <span>JavaScript</span>
+          </div>
+          <div class="stack-card">
+            <img
+              src="./icons/nodejs-svgrepo-com.svg"
+              alt="Node.js"
+              onerror="this.style.display = 'none'"
+            />
+            <span>Node.js</span>
+          </div>
+          <div class="stack-card">
+            <img
+              src="./icons/next-dot-js-svgrepo-com.svg"
+              alt="Next.js"
+              onerror="this.style.display = 'none'"
+            />
+            <span>Next.js</span>
+          </div>
+          <div class="stack-card">
+            <img
+              src="./icons/react-svgrepo-com.svg"
+              alt="React"
+              onerror="this.style.display = 'none'"
+            />
+            <span>React</span>
+          </div>
+          <div class="stack-card">
+            <img
+              src="./icons/python-svgrepo-com.svg"
+              alt="Python"
+              onerror="this.style.display = 'none'"
+            />
+            <span>Python</span>
+          </div>
+          <div class="stack-card">
+            <img
+              src="./icons/flask-svgrepo-com.svg"
+              alt="Flask"
+              onerror="this.style.display = 'none'"
+            />
+            <span>Flask</span>
+          </div>
+          <div class="stack-card">
+            <img
+              src="./icons/github.svg"
+              alt="GitHub"
+              onerror="this.style.display = 'none'"
+            />
+            <span>GitHub</span>
+          </div>
+
+          <div class="stack-card">
+            <img
+              src="./icons/tailwind-svgrepo-com.svg"
+              alt="Tailwind CSS"
+              onerror="this.style.display = 'none'"
+            />
+            <span>Tailwind CSS</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <div class="section-tag">O que construí</div>
+        <h2>Projetos</h2>
+        <div class="divider"></div>
+        <div class="projects-grid">
+          <div class="project-card reveal">
+            <div class="proj-header">
+              <div class="proj-icon"><i class="fas fa-church"></i></div>
+              <div class="proj-links-top">
+                <a
+                  href="#"
+                  target="_blank"
+                  class="proj-icon-link"
+                  aria-label="GitHub"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+
+            <h3 class="proj-title">Paz Church VR</h3>
+
+            <p class="proj-desc">
+              Website institucional desenvolvido para centralizar informações da
+              igreja, incluindo agenda de cultos, eventos e grupos familiares. A
+              plataforma reúne conteúdos recentes e redireciona para YouTube,
+              Instagram, Facebook e Spotify, além de contar com formulário para
+              pedidos de oração e comunicação com a comunidade.
+            </p>
+
+            <div class="proj-tags">
+              <span class="tag">React</span>
+              <span class="tag">Vite</span>
+              <span class="tag">CSS</span>
+              <span class="tag">UI/UX</span>
+              <span class="tag">Responsivo</span>
             </div>
           </div>
-          <h3 class="proj-title">Portfólio Dev</h3>
-          <p class="proj-desc">Portfólio pessoal apresentando habilidades, experiências e projetos de forma simples e objetiva.</p>
-          <div class="proj-tags">
-            <span class="tag">HTML</span>
-            <span class="tag">CSS</span>
-            <span class="tag">JavaScript</span>
-          </div>
-        </div>
 
-        <div class="project-card reveal">
-          <div class="proj-header">
-            <div class="proj-icon"><i class="fas fa-robot"></i></div>
-            <div class="proj-links-top">
-              <a href="https://github.com/rafaelgoncalves1994/NLW-Agents-" target="_blank" class="proj-icon-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <div class="project-card reveal">
+            <div class="proj-header">
+              <div class="proj-icon"><i class="fas fa-chart-bar"></i></div>
+              <div class="proj-links-top">
+                <a
+                  href="https://rafaelgoncalves1994.github.io/Prisma-analytcs/"
+                  target="_blank"
+                  class="proj-icon-link"
+                  aria-label="Demo"
+                  ><i class="fas fa-external-link-alt"></i
+                ></a>
+              </div>
+            </div>
+            <h3 class="proj-title">Prisma Analytics</h3>
+            <p class="proj-desc">
+              Ferramenta de apoio para estudos e pesquisas com conteúdos
+              educacionais baseados em dados.
+            </p>
+            <div class="proj-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
             </div>
           </div>
-          <h3 class="proj-title">NLW Agents</h3>
-          <p class="proj-desc">Aplicação desenvolvida durante o NLW Agents da Rocketseat, explorando IA e automação.</p>
-          <div class="proj-tags">
-            <span class="tag">HTML</span>
-            <span class="tag">CSS</span>
-            <span class="tag">JavaScript</span>
-          </div>
-        </div>
 
-        <div class="project-card reveal">
-          <div class="proj-header">
-            <div class="proj-icon"><i class="fas fa-store"></i></div>
-            <div class="proj-links-top">
-              <a href="https://github.com/rafaelgoncalves1994/imersao-javascript-na-pratica" target="_blank" class="proj-icon-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <div class="project-card reveal">
+            <div class="proj-header">
+              <div class="proj-icon"><i class="fas fa-briefcase"></i></div>
+              <div class="proj-links-top">
+                <a
+                  href="https://github.com/rafaelgoncalves1994"
+                  target="_blank"
+                  class="proj-icon-link"
+                  aria-label="GitHub"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </div>
+            </div>
+            <h3 class="proj-title">Portfólio Dev</h3>
+            <p class="proj-desc">
+              Portfólio pessoal apresentando habilidades, experiências e
+              projetos de forma simples e objetiva.
+            </p>
+            <div class="proj-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
             </div>
           </div>
-          <h3 class="proj-title">Réplica Mercado Livre</h3>
-          <p class="proj-desc">Projeto full stack criado na imersão JavaScript ao vivo da Hashtag, replicando o marketplace.</p>
-          <div class="proj-tags">
-            <span class="tag">HTML</span>
-            <span class="tag">CSS</span>
-            <span class="tag">JavaScript</span>
-            <span class="tag">Node.js</span>
-          </div>
-        </div>
 
-        <div class="project-card reveal">
-          <div class="proj-header">
-            <div class="proj-icon"><i class="fas fa-cloud-sun"></i></div>
-            <div class="proj-links-top">
-              <a href="https://github.com/rafaelgoncalves1994/CLIMMA" target="_blank" class="proj-icon-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <div class="project-card reveal">
+            <div class="proj-header">
+              <div class="proj-icon"><i class="fas fa-robot"></i></div>
+              <div class="proj-links-top">
+                <a
+                  href="https://github.com/rafaelgoncalves1994/NLW-Agents-"
+                  target="_blank"
+                  class="proj-icon-link"
+                  aria-label="GitHub"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+
+            <h3 class="proj-title">NLW Agents</h3>
+
+            <p class="proj-desc">
+              Aplicação focada em automação com IA, desenvolvida durante o NLW
+              da Rocketseat. O projeto simula agentes inteligentes capazes de
+              executar tarefas automatizadas, explorando integração com APIs e
+              lógica de tomada de decisão.
+            </p>
+
+            <div class="proj-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">API</span>
+              <span class="tag">IA</span>
             </div>
           </div>
-          <h3 class="proj-title">CLIMMA</h3>
-          <p class="proj-desc">App de previsão do tempo full stack com Flask no backend e React + Vite no frontend. Mobile first.</p>
-          <div class="proj-tags">
-            <span class="tag">Python</span>
-            <span class="tag">Flask</span>
-            <span class="tag">React</span>
-          </div>
-        </div>
 
-        <div class="project-card reveal">
-          <div class="proj-header">
-            <div class="proj-icon"><i class="fas fa-chart-bar"></i></div>
-            <div class="proj-links-top">
-              <a href="https://rafaelgoncalves1994.github.io/Prisma-analytcs/" target="_blank" class="proj-icon-link" aria-label="Demo"><i class="fas fa-external-link-alt"></i></a>
+          <div class="project-card reveal">
+            <div class="proj-header">
+              <div class="proj-icon"><i class="fas fa-store"></i></div>
+              <div class="proj-links-top">
+                <a
+                  href="https://github.com/rafaelgoncalves1994/imersao-javascript-na-pratica"
+                  target="_blank"
+                  class="proj-icon-link"
+                  aria-label="GitHub"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </div>
+            </div>
+            <h3 class="proj-title">Réplica Mercado Livre</h3>
+            <p class="proj-desc">
+              Projeto full stack criado na imersão JavaScript ao vivo da
+              Hashtag, replicando o marketplace.
+            </p>
+            <div class="proj-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Node.js</span>
             </div>
           </div>
-          <h3 class="proj-title">Prisma Analytics</h3>
-          <p class="proj-desc">Ferramenta de apoio para estudos e pesquisas com conteúdos educacionais baseados em dados.</p>
-          <div class="proj-tags">
-            <span class="tag">HTML</span>
-            <span class="tag">CSS</span>
-            <span class="tag">JavaScript</span>
+
+          <div class="project-card reveal">
+            <div class="proj-header">
+              <div class="proj-icon"><i class="fas fa-cloud-sun"></i></div>
+              <div class="proj-links-top">
+                <a
+                  href="https://github.com/rafaelgoncalves1994/CLIMMA"
+                  target="_blank"
+                  class="proj-icon-link"
+                  aria-label="GitHub"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </div>
+            </div>
+            <h3 class="proj-title">CLIMMA</h3>
+            <p class="proj-desc">
+              App de previsão do tempo full stack com Flask no backend e React +
+              Vite no frontend. Mobile first.
+            </p>
+            <div class="proj-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Flask</span>
+              <span class="tag">React</span>
+            </div>
           </div>
         </div>
-
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- FORMATION -->
-  <section id="formation">
-    <div class="container">
-      <div class="section-tag">Educação</div>
-      <h2>Formação</h2>
-      <div class="divider"></div>
-      <div class="timeline">
+    <!-- FORMATION -->
+    <section id="formation">
+      <div class="container">
+        <div class="section-tag">Educação</div>
+        <h2>Formação</h2>
+        <div class="divider"></div>
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-dot">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="timeline-content glass-card">
+              <div class="tl-inst">
+                UniFOA — Centro Universitário de Volta Redonda
+              </div>
+              <h3 class="tl-title">Análise e Desenvolvimento de Sistemas</h3>
+              <p class="tl-desc">
+                Curso superior focado em análise, desenvolvimento e gestão de
+                sistemas. Programação em Python, Kotlin e SQL, banco de dados,
+                engenharia de software e metodologias ágeis.
+              </p>
+              <span class="tl-badge">Cursando — 2.5 anos</span>
+            </div>
+          </div>
 
-        <div class="timeline-item reveal">
-          <div class="timeline-dot"><i class="fas fa-graduation-cap"></i></div>
-          <div class="timeline-content glass-card">
-            <div class="tl-inst">UniFOA — Centro Universitário de Volta Redonda</div>
-            <h3 class="tl-title">Análise e Desenvolvimento de Sistemas</h3>
-            <p class="tl-desc">Curso superior focado em análise, desenvolvimento e gestão de sistemas. Programação em Python, Kotlin e SQL, banco de dados, engenharia de software e metodologias ágeis.</p>
-            <span class="tl-badge">Cursando — 2.5 anos</span>
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"><i class="fas fa-bolt"></i></div>
+            <div class="timeline-content glass-card">
+              <div class="tl-inst">Comunidade Impressionadora</div>
+              <h3 class="tl-title">Desenvolvimento Web Full Stack</h3>
+              <p class="tl-desc">
+                Competências técnicas e práticas voltadas ao mercado de
+                trabalho, com foco em projetos reais e desenvolvimento
+                profissional contínuo.
+              </p>
+              <span class="tl-badge">Em andamento</span>
+            </div>
           </div>
         </div>
+      </div>
+    </section>
 
-        <div class="timeline-item reveal">
-          <div class="timeline-dot"><i class="fas fa-bolt"></i></div>
-          <div class="timeline-content glass-card">
-            <div class="tl-inst">Comunidade Impressionadora</div>
-            <h3 class="tl-title">Desenvolvimento Web Full Stack</h3>
-            <p class="tl-desc">Competências técnicas e práticas voltadas ao mercado de trabalho, com foco em projetos reais e desenvolvimento profissional contínuo.</p>
-            <span class="tl-badge">Em andamento</span>
-          </div>
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-tag">Vamos conversar</div>
+        <h2>Contato</h2>
+        <div class="divider"></div>
+        <div class="contact-links reveal">
+          <a
+            href="https://github.com/rafaelgoncalves1994/"
+            target="_blank"
+            class="contact-link"
+          >
+            <div class="contact-link-icon"><i class="fab fa-github"></i></div>
+            <div class="contact-link-info">
+              <small>GitHub</small>
+              <span>rafaelgoncalves1994</span>
+            </div>
+            <i class="fas fa-arrow-right contact-arrow"></i>
+          </a>
+          <a
+            href="https://linkedin.com/in/rafael-sergio-28b10132a"
+            target="_blank"
+            class="contact-link"
+          >
+            <div class="contact-link-icon">
+              <i class="fab fa-linkedin-in"></i>
+            </div>
+            <div class="contact-link-info">
+              <small>LinkedIn</small>
+              <span>rafael-sergio-28b10132a</span>
+            </div>
+            <i class="fas fa-arrow-right contact-arrow"></i>
+          </a>
+          <a
+            href="https://wa.me/5524998704925"
+            target="_blank"
+            class="contact-link"
+          >
+            <div class="contact-link-icon"><i class="fab fa-whatsapp"></i></div>
+            <div class="contact-link-info">
+              <small>WhatsApp</small>
+              <span>+55 (24) 99870-4925</span>
+            </div>
+            <i class="fas fa-arrow-right contact-arrow"></i>
+          </a>
         </div>
-
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- CONTACT -->
-  <section id="contact">
-    <div class="container">
-      <div class="section-tag">Vamos conversar</div>
-      <h2>Contato</h2>
-      <div class="divider"></div>
-      <div class="contact-links reveal">
-        <a href="https://github.com/rafaelgoncalves1994/" target="_blank" class="contact-link">
-          <div class="contact-link-icon"><i class="fab fa-github"></i></div>
-          <div class="contact-link-info">
-            <small>GitHub</small>
-            <span>rafaelgoncalves1994</span>
-          </div>
-          <i class="fas fa-arrow-right contact-arrow"></i>
-        </a>
-        <a href="https://linkedin.com/in/rafael-sergio-28b10132a" target="_blank" class="contact-link">
-          <div class="contact-link-icon"><i class="fab fa-linkedin-in"></i></div>
-          <div class="contact-link-info">
-            <small>LinkedIn</small>
-            <span>rafael-sergio-28b10132a</span>
-          </div>
-          <i class="fas fa-arrow-right contact-arrow"></i>
-        </a>
-        <a href="https://wa.me/5524998704925" target="_blank" class="contact-link">
-          <div class="contact-link-icon"><i class="fab fa-whatsapp"></i></div>
-          <div class="contact-link-info">
-            <small>WhatsApp</small>
-            <span>+55 (24) 99870-4925</span>
-          </div>
-          <i class="fas fa-arrow-right contact-arrow"></i>
-        </a>
+    <!-- FOOTER -->
+    <footer>
+      <div class="container footer-inner">
+        <span>© 2025 Rafael Gonçalves</span>
+        <span>Desenvolvido com HTML · CSS · JS</span>
       </div>
-    </div>
-  </section>
+    </footer>
 
-  <!-- FOOTER -->
-  <footer>
-    <div class="container footer-inner">
-      <span>© 2025 Rafael Gonçalves</span>
-      <span>Desenvolvido com HTML · CSS · JS</span>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
