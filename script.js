@@ -78,9 +78,8 @@ revealElements.forEach(el => revealObserver.observe(el));
 
 const heroSub = document.querySelector('.hero-sub');
 const phrases = [
-  'Desenvolvedor Full Stack em formação.',
-  'Apaixonado por tecnologia, inovação e boas práticas de desenvolvimento.',
-  'Focado em aplicações responsivas e intuitivas.',
+  'Desenvolvedor Full Stack.',
+  'Apaixonado por tecnologia',
 ];
 
 let phraseIndex = 0;
