@@ -3,9 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio de Rafael Gonçalves, desenvolvedor Full Stack em formação, com projetos, stack, formação e canais de contato.">
   <title>Rafael Gonçalves | Desenvolvedor Full Stack</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
@@ -29,10 +31,10 @@
       </ul>
 
       <div class="nav-right">
-        <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Alternar tema" aria-pressed="false">
           <i class="fas fa-moon" id="themeIcon"></i>
         </button>
-        <button class="hamburger" id="hamburger" aria-label="Menu">
+        <button class="hamburger" id="hamburger" type="button" aria-label="Abrir menu" aria-controls="navLinks" aria-expanded="false">
           <span></span><span></span><span></span>
         </button>
       </div>
@@ -48,12 +50,12 @@
       </div>
       <h1>Olá, sou <span class="grad">Rafael<br>Gonçalves</span></h1>
       <div class="hero-sub">
-        <p >Desenvolvedor Full Stack em formação — criando soluções simples, elegantes e funcionais.</p>
+
       </div>
 
       <div class="hero-btns">
-        <a href="Rafael (curriculo at).pdf" class="btn-primary"><i class="fas fa-download"></i> Download CV</a>
-        <a href="#projects" class="btn-ghost">Ver Projetos</a>
+        <a href="#projects" class="btn-primary">Ver Projetos</a>
+        <a href="curriculo_rafael_salesforce_fullstack.pdf" class="btn-ghost" download><i class="fas fa-download"></i> Baixar currículo</a>
       </div>
     </div>
 
@@ -62,16 +64,16 @@
         <img src="./images/fael.png" alt="Foto de Rafael Gonçalves">
       </div>
       <div class="hero-social">
-        <a href="https://github.com/rafaelgoncalves1994/" target="_blank" class="social-pill" aria-label="GitHub">
+        <a href="https://github.com/rafaelgoncalves1994/" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="GitHub">
           <i class="fab fa-github"></i>
         </a>
-        <a href="https://linkedin.com/in/rafael-sergio-28b10132a" target="_blank" class="social-pill" aria-label="LinkedIn">
+        <a href="https://linkedin.com/in/rafael-sergio-28b10132a" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="LinkedIn">
           <i class="fab fa-linkedin-in"></i>
         </a>
-        <a href="https://wa.me/5524998704925" target="_blank" class="social-pill" aria-label="WhatsApp">
+        <a href="https://wa.me/5524998704925" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="WhatsApp">
           <i class="fab fa-whatsapp"></i>
         </a>
-        <a href="mailto:rafaelgoncalves1994@gmail.com?subject=Contato pelo site&body=Olá, vi seu site e gostaria de falar com você." target="_blank" class="social-pill" aria-label="E-mail">
+        <a href="mailto:rafaelgoncalves1994@gmail.com?subject=Contato pelo site&body=Olá, vi seu site e gostaria de falar com você." class="social-pill" aria-label="E-mail">
           <i class="fas fa-envelope"></i>
         </a>
       </div>
@@ -98,17 +100,17 @@
         <div class="glass-card">
           <div class="card-icon"><i class="fas fa-laptop-code"></i></div>
           <div class="card-label">Foco</div>
-          <div class="card-val">Full Stack Developer</div>
+          <div class="card-val">Full Stack • Salesforce Developer • Automation</div>
         </div>
         <div class="glass-card">
           <div class="card-icon"><i class="fas fa-bolt"></i></div>
           <div class="card-label">Comunidade</div>
-          <div class="card-val">Impressionadora</div>
+          <div class="card-val">Trailblazer • Salesforce Ecosystem • BALF 360 • Impressionadora</div>
         </div>
       </div>
       <p class="about-bio reveal">
-        Sou um desenvolvedor <strong>Full Stack em formação</strong>, apaixonado por tecnologia, inovação e pela criação de soluções inteligentes que resolvem problemas reais. Meu foco é desenvolver aplicações <strong>funcionais, responsivas e intuitivas</strong>, com atenção especial à experiência do usuário e às boas práticas de desenvolvimento. Acredito que a tecnologia deve ser <strong>acessível, eficiente e impactante</strong>.
-      </p>
+  Atuo no desenvolvimento de aplicações <strong>Full Stack modernas</strong>, criando soluções web e mobile com foco em <strong>performance</strong>, <strong>experiência do usuário</strong> e <strong>arquitetura escalável</strong>. Atualmente, direciono minha evolução para o <strong>ecossistema Salesforce</strong>, conectando desenvolvimento Full Stack com <strong>automação</strong>, <strong>Flow</strong>, <strong>Agentforce</strong> e soluções orientadas a processos de negócio. Minha base em <strong>React</strong>, <strong>Node.js</strong>, <strong>TypeScript</strong> e <strong>React Native</strong> fortalece essa trajetória, unindo desenvolvimento moderno, IA aplicada e automações empresariais. Como <strong>Trailblazer</strong>, aprofundo minha evolução através do <strong>Trailhead</strong> e do <strong>BALF 360</strong>, com foco em CRM, automação e soluções escaláveis.
+</p>
     </div>
   </section>
 
@@ -116,45 +118,72 @@
   <section id="stack">
     <div class="container">
       <div class="section-tag">Tecnologias</div>
-      <h2>My Stack</h2>
+      <h2>Stack Principal</h2>
       <div class="divider"></div>
-      <div class="stack-grid reveal">
-        <div class="stack-card">
-          <img src="./icons/html-5-svgrepo-com.svg" alt="HTML5" onerror="this.style.display='none'">
-          <span>HTML</span>
-        </div>
-        <div class="stack-card">
-          <img src="./icons/css-3-svgrepo-com.svg" alt="CSS3" onerror="this.style.display='none'">
-          <span>CSS</span>
-        </div>
-        <div class="stack-card">
-          <img src="./icons/javascript-logo-svgrepo-com.svg" alt="JavaScript" onerror="this.style.display='none'">
-          <span>JavaScript</span>
-        </div>
-        <div class="stack-card">
-          <img src="./icons/nodejs-svgrepo-com.svg" alt="Node.js" onerror="this.style.display='none'">
-          <span>Node.js</span>
-        </div>
-        <div class="stack-card">
-          <img src="./icons/react-svgrepo-com.svg" alt="React" onerror="this.style.display='none'">
-          <span>React</span>
-        </div>
-        <div class="stack-card">
-          <img src="./icons/python-svgrepo-com.svg" alt="Python" onerror="this.style.display='none'">
-          <span>Python</span>
-        </div>
-        <div class="stack-card">
-          <img src="./icons/flask-svgrepo-com.svg" alt="Flask" onerror="this.style.display='none'">
-          <span>Flask</span>
-        </div>
-        <div class="stack-card">
-          <img src="./icons/github.svg" alt="GitHub" onerror="this.style.display='none'">
-          <span>GitHub</span>
-        </div>
-        <div class="stack-card">
-          <img src="./icons/next-dot-js-svgrepo-com.svg" alt="Next.js" onerror="this.style.display='none'">
-          <span>Next.js</span>
-        </div>
+      <div class="stack-grid">
+        <article class="stack-domain stack-domain--frontend reveal">
+          <div class="stack-domain-head">
+            <span class="stack-domain-icon"><i class="fas fa-display" aria-hidden="true"></i></span>
+            <h3>Frontend</h3>
+          </div>
+          <div class="stack-techs">
+            <span class="stack-tech"><img src="./icons/html-5-svgrepo-com.svg" alt="">HTML5</span>
+            <span class="stack-tech"><img src="./icons/css-3-svgrepo-com.svg" alt="">CSS3</span>
+            <span class="stack-tech"><img src="./icons/javascript-logo-svgrepo-com.svg" alt="">JavaScript</span>
+            <span class="stack-tech"><img src="./icons/typescript-original.svg" alt="">TypeScript</span>
+            <span class="stack-tech"><img src="./icons/react-svgrepo-com.svg" alt="">React</span>
+            <span class="stack-tech"><img src="./icons/vite-original.svg" alt="">Vite</span>
+            <span class="stack-tech"><img src="./icons/tailwindcss-svgrepo-com.svg" alt="">Tailwind CSS</span>
+          </div>
+        </article>
+
+        <article class="stack-domain stack-domain--mobile reveal">
+          <div class="stack-domain-head">
+            <span class="stack-domain-icon"><i class="fas fa-mobile-screen-button" aria-hidden="true"></i></span>
+            <h3>Mobile</h3>
+          </div>
+          <div class="stack-techs">
+            <span class="stack-tech"><img src="./icons/react-svgrepo-com.svg" alt="">React Native</span>
+            <span class="stack-tech"><img class="stack-logo--mono" src="./icons/expo-original.svg" alt="">Expo</span>
+          </div>
+        </article>
+
+        <article class="stack-domain stack-domain--backend reveal">
+          <div class="stack-domain-head">
+            <span class="stack-domain-icon"><i class="fas fa-server" aria-hidden="true"></i></span>
+            <h3>Backend</h3>
+          </div>
+          <div class="stack-techs">
+            <span class="stack-tech"><img src="./icons/nodejs-svgrepo-com.svg" alt="">Node.js</span>
+            <span class="stack-tech"><img class="stack-logo--mono" src="./icons/express-original.svg" alt="">Express</span>
+            <span class="stack-tech"><img class="stack-logo--mono" src="./icons/next-dot-js-svgrepo-com.svg" alt="">Next.js</span>
+            <span class="stack-tech"><i class="fas fa-plug" aria-hidden="true"></i>APIs REST</span>
+          </div>
+        </article>
+
+        <article class="stack-domain stack-domain--data reveal">
+          <div class="stack-domain-head">
+            <span class="stack-domain-icon"><i class="fas fa-database" aria-hidden="true"></i></span>
+            <h3>Banco &amp; Backend as a Service</h3>
+          </div>
+          <div class="stack-techs">
+            <span class="stack-tech"><img src="./icons/supabase-original.svg" alt="">Supabase</span>
+            <span class="stack-tech"><img src="./icons/postgresql-original.svg" alt="">PostgreSQL</span>
+          </div>
+        </article>
+
+        <article class="stack-domain stack-domain--tools reveal">
+          <div class="stack-domain-head">
+            <span class="stack-domain-icon"><i class="fas fa-wand-magic-sparkles" aria-hidden="true"></i></span>
+            <h3>Ferramentas &amp; Produtividade</h3>
+          </div>
+          <div class="stack-techs">
+            <span class="stack-tech"><img src="./icons/git-original.svg" alt="">Git</span>
+            <span class="stack-tech"><img class="stack-logo--mono" src="./icons/github.svg" alt="">GitHub</span>
+            <span class="stack-tech"><i class="fas fa-wand-magic-sparkles" aria-hidden="true"></i>IA aplicada</span>
+            <span class="stack-tech"><i class="fas fa-terminal" aria-hidden="true"></i>Prompt Engineering</span>
+          </div>
+        </article>
       </div>
     </div>
   </section>
@@ -166,148 +195,564 @@
       <h2>Projetos</h2>
       <div class="divider"></div>
       <div class="projects-grid">
+        <article class="project-card project-card--agenda reveal">
+          <div class="project-cover project-cover--media" aria-hidden="true">
+            <img src="./images/projects/agenda/agenda-capa.jpeg" alt="" loading="lazy" decoding="async">
+            <span class="project-cover-caption">Agenda mensal</span>
+          </div>
+          <div class="project-card-content">
+            <div class="project-meta">
+              <span class="proj-category">Aplicação Mobile SaaS</span>
+              <span class="project-status"><i></i>Lançamento</span>
+            </div>
+            <h3 class="proj-title">App de Agenda</h3>
+            <p class="proj-desc">Agenda, clientes e financeiro para profissionais autônomos em uma experiência mobile unificada.</p>
+            <div class="proj-tags">
+              <span class="tag">React Native</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">Supabase</span>
+            </div>
+            <button class="case-trigger" type="button" data-case-open="agenda" aria-label="Ver case: App de Agenda">
+              Ver Case <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+        </article>
 
-        <div class="project-card reveal">
-          <div class="proj-header">
-            <div class="proj-icon"><i class="fas fa-briefcase"></i></div>
-            <div class="proj-links-top">
-              <a href="https://github.com/rafaelgoncalves1994/portifolio" target="_blank" class="proj-icon-link" aria-label="GitHub"><i class="fas fa-external-link-alt"></i> <span>Acessar</span></a>
+        <article class="project-card project-card--media reveal">
+          <div class="project-cover project-cover--media" aria-hidden="true">
+            <img src="./images/projects/media-player/home-capa.jpeg" alt="" loading="lazy" decoding="async">
+            <span class="project-cover-caption">Biblioteca principal</span>
+          </div>
+          <div class="project-card-content">
+            <div class="project-meta">
+              <span class="proj-category">Streaming / Media Platform</span>
+              <span class="project-status"><i></i>Desenvolvimento</span>
+            </div>
+            <h3 class="proj-title">Media Player App</h3>
+            <p class="proj-desc">Plataforma mobile para organizar e reproduzir conteúdos de um servidor configurável.</p>
+            <div class="proj-tags">
+              <span class="tag">React Native</span>
+              <span class="tag">Expo</span>
+              <span class="tag">Zustand</span>
+            </div>
+            <button class="case-trigger" type="button" data-case-open="media" aria-label="Ver case: Media Player App">
+              Ver Case <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+        </article>
+
+        <article class="project-card project-card--church reveal">
+          <div class="project-cover project-cover--media" aria-hidden="true">
+            <img src="./images/projects/paz-church/home-capa.png" alt="" loading="lazy" decoding="async">
+            <span class="project-cover-caption">Experiência digital</span>
+          </div>
+          <div class="project-card-content">
+            <div class="project-meta">
+              <span class="proj-category">Plataforma Web Institucional</span>
+              <span class="project-status project-status--live"><i></i>Em produção</span>
+            </div>
+            <h3 class="proj-title">Paz Church VR</h3>
+            <p class="proj-desc">Comunidade, transmissão digital, eventos e formulários inteligentes em uma plataforma web.</p>
+            <div class="proj-tags">
+              <span class="tag">React</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">Vercel</span>
+            </div>
+            <button class="case-trigger" type="button" data-case-open="church" aria-label="Ver case: Paz Church VR">
+              Ver Case <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+        </article>
+
+        <article class="project-card project-card--prisma reveal">
+          <div class="project-cover project-cover--media" aria-hidden="true">
+            <img src="./images/projects/prisma-analytics/analise-capa.png" alt="" loading="lazy" decoding="async">
+            <span class="project-cover-caption">Análise inteligente</span>
+          </div>
+          <div class="project-card-content">
+            <div class="project-meta">
+              <span class="proj-category">Plataforma Educacional com IA</span>
+              <span class="project-status"><i></i>MVP funcional</span>
+            </div>
+            <h3 class="proj-title">Prisma Analytics</h3>
+            <p class="proj-desc">Plataforma educacional com IA para geração de análises inteligentes, simulações estatísticas e exportação automatizada de dados.</p>
+            <div class="proj-tags">
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS3</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">OpenAI API</span>
+              <span class="tag">SheetJS</span>
+              <span class="tag">Showdown.js</span>
+              <span class="tag">LocalStorage</span>
+            </div>
+            <button class="case-trigger" type="button" data-case-open="prisma" aria-label="Ver case: Prisma Analytics">
+              Ver Case <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+        </article>
+
+        <article class="project-card project-card--labs reveal">
+          <div class="project-cover" aria-hidden="true">
+            <div class="cover-labs">
+              <div class="cover-labs-header">
+                <i class="fas fa-flask"></i>
+                <span></span>
+              </div>
+              <div class="cover-labs-grid">
+                <span>Next.js</span>
+                <span>IA</span>
+                <span>Flask</span>
+                <span>Node.js</span>
+              </div>
+              <div class="cover-labs-progress"><span></span></div>
             </div>
           </div>
-          <h3 class="proj-title">Portfólio Dev</h3>
-          <p class="proj-desc">Portfólio pessoal apresentando habilidades, experiências e projetos de forma simples e objetiva.</p>
-          <div class="proj-tags">
-            <span class="tag">HTML</span>
-            <span class="tag">CSS</span>
-            <span class="tag">JavaScript</span>
-          </div>
-        </div>
-
-         <div class="project-card reveal">
-          <div class="proj-header">
-            <div class="proj-icon"><i class="fas fa-church"></i></div>
-            <div class="proj-links-top">
-              <a href="https://paz-church-vr.vercel.app/" target="_blank" class="proj-icon-link" aria-label="GitHub"><i class="fas fa-external-link-alt"></i> <span>Acessar</span></a>
+          <div class="project-card-content">
+            <div class="project-meta">
+              <span class="proj-category">Estudos &amp; Experimentação</span>
+              <span class="project-status"><i></i>Em evolução</span>
             </div>
-          </div>
-          <h3 class="proj-title">Website institucional da Paz Church V.R.</h3>
-          <p class="proj-desc">SSite institucional moderno da Paz Church, desenvolvido para apresentar a igreja, sua missão e fortalecer a conexão com a comunidade. A plataforma reúne informações sobre cultos, eventos e ministérios, facilitando o acesso e o engajamento dos visitantes. 
-          Com navegação intuitiva e design responsivo, amplia o alcance digital e potencializa a comunicação da igreja.</p>
-          <div class="proj-tags">
-            <span class="tag">React</span>
-            <span class="tag">TypeScript</span>
-            <span class="tag">Tailwind CSS</span>
-            <span class="tag">Vite</span>
-            
-          </div>
-        </div>
-
-
-         <div class="project-card reveal">
-          <div class="proj-header">
-            <div class="proj-icon"><i class="fas fa-chart-bar"></i></div>
-            <div class="proj-links-top">
-              <a href="https://rafaelgoncalves1994.github.io/Prisma-analytcs/" target="_blank" class="proj-icon-link" aria-label="Demo"><i class="fas fa-external-link-alt"></i>
-              <span>Acessar</span></a>
+            <h3 class="proj-title">Imersões &amp; Laboratórios</h3>
+            <p class="proj-desc">Projetos desenvolvidos durante estudos práticos, imersões técnicas e experimentações voltadas à evolução contínua em desenvolvimento Full Stack.</p>
+            <div class="proj-tags">
+              <span class="tag">Next.js</span>
+              <span class="tag">IA</span>
+              <span class="tag">Flask</span>
+              <span class="tag">Node.js</span>
             </div>
+            <button class="case-trigger" id="labsOpen" type="button" aria-haspopup="dialog" aria-controls="labsModal">
+              Explorar laboratório <i class="fas fa-arrow-right"></i>
+            </button>
           </div>
-          <h3 class="proj-title">Prisma Analytics</h3>
-          <p class="proj-desc">Ferramenta web educacional que transforma perguntas em análises detalhadas com apoio de IA, tornando o estudo mais prático, direto e orientado a dados.
-Permite gerar insights, exportar tabelas automaticamente para Excel e salvar conteúdos com facilidade, otimizando o fluxo de aprendizado.
-Com estrutura leve e acessível, a aplicação prioriza simplicidade, produtividade e análise crítica no ambiente acadêmico.</p>
-          <div class="proj-tags">
-            <span class="tag">HTML</span>
-            <span class="tag">CSS</span>
-            <span class="tag">JavaScript</span>
-          </div>
-        </div>
-
-        <div class="project-card reveal">
-          <div class="proj-header">
-            <div class="proj-icon"><i class="fas fa-robot"></i></div>
-            <div class="proj-links-top">
-              <a href="https://github.com/rafaelgoncalves1994/NLW-Agents-" target="_blank" class="proj-icon-link" aria-label="GitHub"><i class="fas fa-external-link-alt"></i> <span>Acessar</span></a>
-            </div>
-          </div>
-          <h3 class="proj-title">NLW Agents</h3>
-          <p class="proj-desc">Aplicação desenvolvida durante o NLW Agents da Rocketseat, explorando IA e automação.</p>
-          <div class="proj-tags">
-            <span class="tag">HTML</span>
-            <span class="tag">CSS</span>
-            <span class="tag">JavaScript</span>
-          </div>
-        </div>
-
-        <div class="project-card reveal">
-          <div class="proj-header">
-            <div class="proj-icon"><i class="fas fa-store"></i></div>
-            <div class="proj-links-top">
-              <a href="https://github.com/rafaelgoncalves1994/imersao-javascript-na-pratica" target="_blank" class="proj-icon-link" aria-label="GitHub"><i class="fas fa-external-link-alt"></i> <span>Acessar</span></a>
-            </div>
-          </div>
-          <h3 class="proj-title">Réplica Mercado Livre</h3>
-          <p class="proj-desc">Projeto full stack criado na imersão JavaScript ao vivo da Hashtag, replicando o marketplace.</p>
-          <div class="proj-tags">
-            <span class="tag">HTML</span>
-            <span class="tag">CSS</span>
-            <span class="tag">JavaScript</span>
-            <span class="tag">Node.js</span>
-          </div>
-        </div>
-
-        <div class="project-card reveal">
-          <div class="proj-header">
-            <div class="proj-icon"><i class="fas fa-cloud-sun"></i></div>
-            <div class="proj-links-top">
-              <a href="https://github.com/rafaelgoncalves1994/CLIMMA" target="_blank" class="proj-icon-link" aria-label="GitHub"><i class="fas fa-external-link-alt"></i> <span>Acessar</span></a>
-            </div>
-          </div>
-          <h3 class="proj-title">CLIMMA</h3>
-          <p class="proj-desc">App de previsão do tempo full stack com Flask no backend e React + Vite no frontend. Mobile first.</p>
-          <div class="proj-tags">
-            <span class="tag">Python</span>
-            <span class="tag">Flask</span>
-            <span class="tag">React</span>
-          </div>
-        </div>
-
-       
-
+        </article>
       </div>
     </div>
   </section>
+
+  <div class="case-modal" id="caseModal" aria-hidden="true">
+      <div class="case-backdrop" data-case-close></div>
+      <div class="case-dialog" id="caseDialog" role="dialog" aria-modal="true" aria-labelledby="caseTitle" tabindex="-1">
+        <div class="case-toolbar">
+          <span class="case-toolbar-label">Case técnico</span>
+          <button class="case-close" type="button" data-case-close aria-label="Fechar case">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="case-scroll">
+          <header class="case-hero">
+            <div class="case-hero-cover" id="caseHeroCover" aria-hidden="true">
+              <div class="case-visual-panel">
+                <div class="case-visual-top"><span></span><span></span><span></span></div>
+                <div class="case-visual-feature"></div>
+                <div class="case-visual-grid"><span></span><span></span><span></span></div>
+              </div>
+            </div>
+            <div class="case-hero-copy">
+              <div class="case-meta-row">
+                <span class="case-category" id="caseCategory"></span>
+                <span class="case-status" id="caseStatus"></span>
+                <a class="case-site-link" id="caseSiteLink" target="_blank" rel="noopener noreferrer" hidden>
+                  Ver site <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                </a>
+              </div>
+              <h3 id="caseTitle"></h3>
+              <p id="caseSubtitle"></p>
+              <div class="case-pills" id="casePrimaryStack"></div>
+            </div>
+          </header>
+
+          <div class="case-content">
+            <div class="case-story">
+              <article class="case-block">
+                <span class="case-index">01</span>
+                <h4>Problema</h4>
+                <p id="caseProblem"></p>
+              </article>
+              <article class="case-block">
+                <span class="case-index">02</span>
+                <h4>Solução</h4>
+                <p id="caseSolution"></p>
+              </article>
+            </div>
+
+            <section class="case-block">
+              <div class="case-block-head">
+                <span class="case-index">03</span>
+                <h4>Funcionalidades</h4>
+              </div>
+              <ul class="case-features" id="caseFeatures"></ul>
+            </section>
+
+            <section class="case-block">
+              <div class="case-block-head">
+                <span class="case-index">04</span>
+                <h4>Stack</h4>
+              </div>
+              <div class="case-stack" id="caseStack"></div>
+            </section>
+
+            <section class="case-block">
+              <div class="case-block-head">
+                <span class="case-index">05</span>
+                <h4>Galeria visual</h4>
+              </div>
+              <div class="case-gallery" id="caseGallery" aria-label="Espaços preparados para imagens do projeto"></div>
+            </section>
+
+            <section class="case-block">
+              <div class="case-block-head">
+                <span class="case-index">06</span>
+                <h4>Destaques técnicos</h4>
+              </div>
+              <div class="case-highlights" id="caseHighlights"></div>
+            </section>
+
+            <section class="case-block case-process">
+              <div class="case-block-head">
+                <span class="case-index">07</span>
+                <h4>Processo de desenvolvimento</h4>
+              </div>
+              <div class="case-process-copy" id="caseProcess"></div>
+            </section>
+
+            <section class="case-block case-differentials" id="caseDifferentialsBlock" hidden>
+              <div class="case-block-head">
+                <span class="case-index">08</span>
+                <h4>Diferenciais do produto</h4>
+              </div>
+              <div class="case-differentials-grid" id="caseDifferentials"></div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="labs-modal" id="labsModal" aria-hidden="true">
+    <div class="labs-backdrop" data-labs-close></div>
+    <div class="labs-dialog" id="labsDialog" role="dialog" aria-modal="true" aria-labelledby="labsTitle" tabindex="-1">
+      <div class="labs-toolbar">
+        <div>
+          <span class="labs-eyebrow">Hub de estudos</span>
+          <h3 id="labsTitle">Imersões &amp; Laboratórios</h3>
+        </div>
+        <button class="labs-close" type="button" data-labs-close aria-label="Fechar laboratórios">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="labs-scroll">
+        <p class="labs-intro">Projetos práticos e experimentações que registram evolução técnica, repertório moderno e exploração contínua em engenharia de software.</p>
+
+        <section class="labs-group">
+          <div class="labs-group-head">
+            <span>01</span>
+            <h4>Imersões Técnicas</h4>
+          </div>
+          <div class="labs-grid">
+            <article class="lab-item lab-item--featured">
+              <div class="lab-thumb lab-thumb--booking" aria-hidden="true">
+                <i class="fas fa-calendar-check"></i>
+              </div>
+              <div class="lab-item-head">
+                <div>
+                  <span class="lab-category">SaaS / Booking Platform</span>
+                  <h5>Barbershop SaaS</h5>
+                </div>
+                <span class="lab-badge">Imersão Técnica</span>
+              </div>
+              <p>Estudo prático de arquitetura moderna utilizando Next.js, Prisma e componentes avançados para construção de uma plataforma SaaS de agendamento para barbearias.</p>
+              <div class="lab-tags">
+                <span>Next.js</span><span>React 19</span><span>Prisma</span><span>shadcn/ui</span><span>Vercel AI SDK</span>
+              </div>
+              <div class="lab-highlights">
+                <span>Booking flow</span><span>Server Actions</span><span>AI chat</span><span>Prisma ORM</span>
+              </div>
+              <span class="lab-action">Estudo Técnico</span>
+            </article>
+
+            <article class="lab-item">
+              <div class="lab-thumb lab-thumb--agents" aria-hidden="true">
+                <i class="fas fa-robot"></i>
+              </div>
+              <div class="lab-item-head">
+                <div>
+                  <span class="lab-category">AI &amp; Automation</span>
+                  <h5>NLW Agents</h5>
+                </div>
+                <span class="lab-badge">Rocketseat</span>
+              </div>
+              <p>Projeto desenvolvido durante a NLW Agents explorando automações, IA e fundamentos modernos de aplicações web.</p>
+              <div class="lab-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+              <a class="lab-action lab-action--link" href="https://github.com/rafaelgoncalves1994/NLW-Agents-" target="_blank" rel="noopener noreferrer">GitHub <i class="fas fa-arrow-up-right-from-square"></i></a>
+            </article>
+
+            <article class="lab-item">
+              <div class="lab-thumb lab-thumb--market" aria-hidden="true">
+                <i class="fas fa-store"></i>
+              </div>
+              <div class="lab-item-head">
+                <div>
+                  <span class="lab-category">Marketplace Simulation</span>
+                  <h5>Réplica Mercado Livre</h5>
+                </div>
+                <span class="lab-badge">JavaScript Imersão</span>
+              </div>
+              <p>Simulação prática de marketplace inspirada no Mercado Livre, focada em manipulação dinâmica de dados e fluxo de produtos.</p>
+              <div class="lab-tags"><span>JavaScript</span><span>Node.js</span><span>HTML</span><span>CSS</span></div>
+              <a class="lab-action lab-action--link" href="https://github.com/rafaelgoncalves1994/imersao-javascript-na-pratica" target="_blank" rel="noopener noreferrer">GitHub <i class="fas fa-arrow-up-right-from-square"></i></a>
+            </article>
+          </div>
+        </section>
+
+        <section class="labs-group">
+          <div class="labs-group-head">
+            <span>02</span>
+            <h4>Projetos Acadêmicos</h4>
+          </div>
+          <div class="labs-grid labs-grid--academic">
+            <article class="lab-item">
+              <div class="lab-thumb lab-thumb--weather" aria-hidden="true">
+                <i class="fas fa-cloud-sun"></i>
+              </div>
+              <div class="lab-item-head">
+                <div>
+                  <span class="lab-category">Weather Application</span>
+                  <h5>CLIMMA</h5>
+                </div>
+                <span class="lab-badge">Projeto Acadêmico</span>
+              </div>
+              <p>Aplicação full stack mobile-first para previsão meteorológica utilizando integração com APIs externas.</p>
+              <div class="lab-tags"><span>Flask</span><span>Python</span><span>React</span><span>Vite</span></div>
+              <a class="lab-action lab-action--link" href="https://github.com/rafaelgoncalves1994/CLIMMA" target="_blank" rel="noopener noreferrer">GitHub <i class="fas fa-arrow-up-right-from-square"></i></a>
+            </article>
+
+            <article class="lab-item lab-item--experiments">
+              <div class="lab-thumb lab-thumb--code" aria-hidden="true">
+                <i class="fas fa-code"></i>
+              </div>
+              <div class="lab-item-head">
+                <div>
+                  <span class="lab-category">ADS / Fundamentos</span>
+                  <h5>Experimentos Acadêmicos</h5>
+                </div>
+                <span class="lab-badge">Laboratório</span>
+              </div>
+              <p>Projetos experimentais voltados à prática de fundamentos de programação, lógica, banco de dados e arquitetura de software durante a graduação em ADS.</p>
+              <div class="lab-tags"><span>Lógica</span><span>SQL</span><span>Python</span><span>Arquitetura</span></div>
+              <span class="lab-action">Laboratório</span>
+            </article>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
 
  
   <section id="formation">
     <div class="container">
-      <div class="section-tag">Educação</div>
-      <h2>Formação</h2>
+      <div class="section-tag">Evolução profissional</div>
+      <h2>Formação &amp; Especializações</h2>
       <div class="divider"></div>
-      <div class="timeline">
+      <p class="formation-intro reveal">Uma jornada construída entre engenharia de software, desenvolvimento Full Stack, inteligência artificial aplicada, dados e ecossistema Salesforce.</p>
 
-        <div class="timeline-item reveal">
-          <div class="timeline-dot"><i class="fas fa-graduation-cap"></i></div>
-          <div class="timeline-content glass-card">
-            <div class="tl-inst">UniFOA — Centro Universitário de Volta Redonda</div>
-            <h3 class="tl-title">Análise e Desenvolvimento de Sistemas</h3>
-            <p class="tl-desc">Curso superior focado em análise, desenvolvimento e gestão de sistemas. Programação em Python, Kotlin e SQL, banco de dados, engenharia de software e metodologias ágeis.</p>
-            <span class="tl-badge">Cursando — 2.5 anos</span>
-          </div>
+      <div class="career-roadmap reveal" aria-label="Linha de evolução profissional">
+        <div class="career-stage">
+          <span>Base</span>
+          <strong>ADS</strong>
+          <small>Engenharia de software</small>
         </div>
-
-        <div class="timeline-item reveal">
-          <div class="timeline-dot"><i class="fas fa-bolt"></i></div>
-          <div class="timeline-content glass-card">
-            <div class="tl-inst">Comunidade Impressionadora</div>
-            <h3 class="tl-title">Desenvolvimento Web Full Stack</h3>
-            <p class="tl-desc">Competências técnicas e práticas voltadas ao mercado de trabalho, com foco em projetos reais e desenvolvimento profissional contínuo.</p>
-            <span class="tl-badge">Em andamento</span>
-          </div>
+        <i class="fas fa-arrow-right" aria-hidden="true"></i>
+        <div class="career-stage">
+          <span>Construção</span>
+          <strong>Full Stack</strong>
+          <small>Web, APIs e dados</small>
         </div>
+        <i class="fas fa-arrow-right" aria-hidden="true"></i>
+        <div class="career-stage">
+          <span>Aceleração</span>
+          <strong>IA Aplicada</strong>
+          <small>Claude e workflows</small>
+        </div>
+        <i class="fas fa-arrow-right" aria-hidden="true"></i>
+        <div class="career-stage">
+          <span>Evolução</span>
+          <strong>Dados + Salesforce</strong>
+          <small>Supabase e BALF 360</small>
+        </div>
+      </div>
 
+      <section class="formation-group">
+        <div class="formation-group-head reveal">
+          <span>01</span>
+          <h3>Formação Acadêmica</h3>
+        </div>
+        <article class="learning-card learning-card--academic reveal">
+          <div class="learning-card-icon"><i class="fas fa-graduation-cap" aria-hidden="true"></i></div>
+          <div class="learning-card-main">
+            <div class="learning-meta">
+              <span class="learning-provider">UniFOA</span>
+              <span class="learning-status learning-status--active">Cursando</span>
+            </div>
+            <h4>Análise e Desenvolvimento de Sistemas</h4>
+            <p>Formação tecnológica em desenvolvimento de sistemas, engenharia de software, APIs, banco de dados e arquitetura.</p>
+            <div class="learning-tags">
+              <span>Engenharia de Software</span><span>APIs</span><span>SQL</span><span>Banco de Dados</span><span>Arquitetura</span>
+            </div>
+          </div>
+          <button class="learning-action" type="button" data-formation-open="ads">
+            Ver formação <i class="fas fa-arrow-right" aria-hidden="true"></i>
+          </button>
+        </article>
+      </section>
+
+      <section class="formation-group">
+        <div class="formation-group-head reveal">
+          <span>02</span>
+          <h3>Especializações Técnicas &amp; Ecossistemas</h3>
+        </div>
+        <div class="learning-grid">
+          <article class="learning-card learning-card--fullstack reveal">
+            <div class="learning-card-icon"><i class="fas fa-code" aria-hidden="true"></i></div>
+            <div class="learning-meta">
+              <span class="learning-provider">Hashtag Treinamentos</span>
+              <span class="learning-status learning-status--done">Completo</span>
+            </div>
+            <h4>Full Stack Impressionador</h4>
+            <p>Formação completa para aplicações modernas, do frontend ao banco de dados.</p>
+            <div class="learning-tags">
+              <span>React</span><span>Node.js</span><span>Express</span><span>PostgreSQL</span>
+            </div>
+            <button class="learning-action" type="button" data-formation-open="fullstack">
+              Ver certificado <i class="fas fa-arrow-right" aria-hidden="true"></i>
+            </button>
+          </article>
+
+          <article class="learning-card learning-card--claude reveal">
+            <div class="learning-card-icon"><i class="fas fa-wand-magic-sparkles" aria-hidden="true"></i></div>
+            <div class="learning-meta">
+              <span class="learning-provider">Hashtag Treinamentos</span>
+              <span class="learning-status learning-status--done">Completo</span>
+            </div>
+            <h4>Claude Impressionador</h4>
+            <p>IA aplicada à produtividade e desenvolvimento com Claude Code.</p>
+            <div class="learning-tags">
+              <span>Claude Code</span><span>IA</span><span>Cowork</span><span>Excel com Claude</span>
+            </div>
+            <button class="learning-action" type="button" data-formation-open="claude">
+              Ver certificado <i class="fas fa-arrow-right" aria-hidden="true"></i>
+            </button>
+          </article>
+
+          <article class="learning-card learning-card--supabase reveal">
+            <div class="learning-card-icon"><i class="fas fa-database" aria-hidden="true"></i></div>
+            <div class="learning-meta">
+              <span class="learning-provider">Comunidade Hashtag</span>
+              <span class="learning-status learning-status--active">Cursando</span>
+            </div>
+            <h4>Supabase / Banco de Dados</h4>
+            <p>Estudo em andamento para aprofundamento em banco de dados com Supabase.</p>
+            <div class="learning-tags">
+              <span>Supabase</span><span>Banco de Dados</span>
+            </div>
+            <button class="learning-action" type="button" data-formation-open="supabase">
+              Ver trilha <i class="fas fa-arrow-right" aria-hidden="true"></i>
+            </button>
+          </article>
+
+          <article class="learning-card learning-card--salesforce reveal">
+            <div class="learning-card-icon"><i class="fas fa-cloud" aria-hidden="true"></i></div>
+            <div class="learning-meta">
+              <span class="learning-provider">Reforce Academy</span>
+              <span class="learning-status learning-status--active">Cursando</span>
+            </div>
+            <h4>BALF 360</h4>
+            <p>Ambiente de aceleração orientado ao ecossistema Salesforce e suas camadas modernas.</p>
+            <div class="learning-tags">
+              <span>Flow</span><span>Data 360</span><span>Agentforce</span><span>Apex</span>
+            </div>
+            <button class="learning-action" type="button" data-formation-open="balf">
+              Ver trilha <i class="fas fa-arrow-right" aria-hidden="true"></i>
+            </button>
+          </article>
+        </div>
+      </section>
+
+      <div class="formation-focus-grid">
+        <section class="focus-panel focus-panel--ai reveal">
+          <div class="focus-panel-head">
+            <i class="fas fa-wand-magic-sparkles" aria-hidden="true"></i>
+            <div>
+              <span>03</span>
+              <h3>IA &amp; Automação</h3>
+            </div>
+          </div>
+          <div class="focus-tags">
+            <span>Claude Code</span><span>Prompt Engineering</span><span>AI Workflows</span><span>Automação Inteligente</span><span>IA aplicada à produtividade</span><span>Agentforce</span><span>Salesforce Flow</span><span>Data 360</span>
+          </div>
+        </section>
+
+        <section class="focus-panel focus-panel--path reveal">
+          <div class="focus-panel-head">
+            <i class="fas fa-route" aria-hidden="true"></i>
+            <div>
+              <span>04</span>
+              <h3>Trilhas em Evolução</h3>
+            </div>
+          </div>
+          <div class="focus-tags">
+            <span>React Native</span><span>Next.js</span><span>Prisma</span><span>Node.js</span><span>IA aplicada</span><span>SaaS Architecture</span><span>Mobile Apps</span><span>Automação</span><span>Vercel AI SDK</span>
+          </div>
+        </section>
       </div>
     </div>
   </section>
+
+  <div class="formation-modal" id="formationModal" aria-hidden="true">
+    <div class="formation-backdrop" data-formation-close></div>
+    <div class="formation-dialog" id="formationDialog" role="dialog" aria-modal="true" aria-labelledby="formationTitle" tabindex="-1">
+      <div class="formation-toolbar">
+        <span class="formation-toolbar-label">Evolução profissional</span>
+        <button class="formation-close" type="button" data-formation-close aria-label="Fechar formação">
+          <i class="fas fa-times" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div class="formation-scroll">
+        <header class="formation-detail-hero">
+          <div class="formation-detail-meta">
+            <span class="formation-detail-category" id="formationCategory"></span>
+            <span class="formation-detail-status" id="formationStatus"></span>
+          </div>
+          <h3 id="formationTitle"></h3>
+          <p class="formation-detail-provider" id="formationProvider"></p>
+          <p class="formation-detail-summary" id="formationSummary"></p>
+          <div class="formation-detail-tags" id="formationTags"></div>
+        </header>
+        <div class="formation-detail-grid">
+          <section class="formation-detail-block">
+            <div class="formation-block-head">
+              <span>01</span>
+              <h4>Competências</h4>
+            </div>
+            <div class="formation-skills" id="formationSkills"></div>
+          </section>
+          <section class="formation-detail-block">
+            <div class="formation-block-head">
+              <span>02</span>
+              <h4>Conteúdos &amp; módulos</h4>
+            </div>
+            <ul class="formation-modules" id="formationModules"></ul>
+          </section>
+          <section class="formation-detail-block formation-preview">
+            <div class="formation-block-head">
+              <span>03</span>
+              <h4 id="formationDocumentTitle">Documento</h4>
+            </div>
+            <div class="formation-document" id="formationDocument"></div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
 
   
   <section id="contact">
@@ -316,28 +761,28 @@ Com estrutura leve e acessível, a aplicação prioriza simplicidade, produtivid
       <h2>Contato</h2>
       <div class="divider"></div>
       <div class="contact-links reveal">
-        <a href="https://github.com/rafaelgoncalves1994/" target="_blank" class="contact-link">
+        <a href="https://github.com/rafaelgoncalves1994/" target="_blank" rel="noopener noreferrer" class="contact-link">
           <div class="contact-link-icon"><i class="fab fa-github"></i></div>
           <div class="contact-link-info">
             <span>GitHub</span>
           </div>
           <i class="fas fa-arrow-right contact-arrow"></i>
         </a>
-        <a href="https://www.linkedin.com/in/rafaelsg1994" target="_blank" class="contact-link">
+        <a href="https://www.linkedin.com/in/rafaelsg1994" target="_blank" rel="noopener noreferrer" class="contact-link">
           <div class="contact-link-icon"><i class="fab fa-linkedin-in"></i></div>
           <div class="contact-link-info">
             <span>LinkedIn</span>
           </div>
           <i class="fas fa-arrow-right contact-arrow"></i>
         </a>
-        <a href="https://wa.me/5524998704925" target="_blank" class="contact-link">
+        <a href="https://wa.me/5524998704925" target="_blank" rel="noopener noreferrer" class="contact-link">
           <div class="contact-link-icon"><i class="fab fa-whatsapp"></i></div>
           <div class="contact-link-info">
             <span>WhatsApp</span>
           </div>
           <i class="fas fa-arrow-right contact-arrow"></i>
         </a>
-        <a href="mailto:rafaelgoncalves1994@hotmail.com?subject=Contato pelo site&body=Olá, vi seu site e gostaria de falar com você." target="_blank" class="contact-link">
+        <a href="mailto:rafaelgoncalves1994@hotmail.com?subject=Contato pelo site&body=Olá, vi seu site e gostaria de falar com você." class="contact-link">
           <div class="contact-link-icon"><i class="fas fa-envelope"></i></div>
           <div class="contact-link-info">
         
@@ -353,7 +798,7 @@ Com estrutura leve e acessível, a aplicação prioriza simplicidade, produtivid
  
   <footer>
     <div class="container footer-inner">
-      <span>© 2025 Rafael Gonçalves</span>
+      <span>© 2026 Rafael Gonçalves</span>
       <span>Desenvolvido com HTML · CSS · JS</span>
     </div>
   </footer>
