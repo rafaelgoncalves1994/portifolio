@@ -438,6 +438,111 @@ const projectCases = {
       'Sem backend complexo',
     ],
   },
+  central: {
+    theme: 'central',
+    title: 'Central Stack',
+    category: 'Portal Editorial de Tecnologia',
+    status: 'Em produção',
+    siteUrl: 'https://centralstack.fun',
+    subtitle:
+      'Portal editorial de tecnologia para publicar tutoriais, artigos e projetos práticos em uma experiência moderna, organizada e responsiva.',
+    problem:
+      'Estudantes e iniciantes em tecnologia precisam de conteúdos técnicos claros, bem organizados e fáceis de acompanhar, sem depender de uma experiência visual genérica ou desestruturada.',
+    solution:
+      'Uma aplicação web editorial com identidade própria, navegação por categorias, páginas institucionais, cards de artigos e uma base de dados centralizada para facilitar expansão de conteúdo.',
+    cover: {
+      src: './images/projects/central-stack/home.png',
+      alt: 'Página inicial do Central Stack com hero, navegação e identidade visual azul voltada a conteúdo tech.',
+    },
+    primaryStack: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'React Router'],
+    features: [
+      'Página inicial',
+      'Categorias editoriais',
+      'Listagem de artigos',
+      'Detalhe de artigo',
+      'Cards responsivos',
+      'Tags de conteúdo',
+      'Tempo de leitura',
+      'Blocos de código',
+      'Páginas institucionais',
+      'Contato simples',
+      'Identidade visual própria',
+      'Experiência mobile',
+    ],
+    stack: [
+      { label: 'Frontend', value: 'React · TypeScript · Vite' },
+      { label: 'Navegação', value: 'React Router' },
+      { label: 'UI', value: 'Tailwind CSS · Lucide React' },
+      { label: 'Conteúdo', value: 'Dados centralizados de artigos, categorias e rotas' },
+      { label: 'Infraestrutura', value: 'Vercel' },
+      { label: 'Arquitetura', value: 'Componentes reutilizáveis e páginas orientadas a dados' },
+    ],
+    gallery: [
+      {
+        label: 'Página inicial',
+        src: './images/projects/central-stack/home.png',
+        alt: 'Home do Central Stack com banner, proposta editorial e navegação principal.',
+      },
+      {
+        label: 'Conteúdo editorial',
+        src: './images/projects/central-stack/home-conteudo.png',
+        alt: 'Seção de conteúdo editorial com tutoriais, projetos para praticar e cursos/ferramentas.',
+      },
+      {
+        label: 'Artigos recentes',
+        src: './images/projects/central-stack/home-artigos.png',
+        alt: 'Grid de artigos recentes com tempo de leitura, datas e cards organizados.',
+      },
+      {
+        label: 'Projetos práticos',
+        src: './images/projects/central-stack/home-projetos.png',
+        alt: 'Seção de ideias para treinar e publicar com cards de projetos práticos.',
+      },
+      {
+        label: 'Contato editorial',
+        src: './images/projects/central-stack/contato-footer.png',
+        alt: 'Seção de contato editorial e rodapé do Central Stack.',
+        layout: 'panorama',
+      },
+      {
+        label: 'Programação',
+        src: './images/projects/central-stack/programacao.png',
+        alt: 'Página de programação com tópicos e conteúdos publicados.',
+      },
+      {
+        label: 'Projetos',
+        src: './images/projects/central-stack/projetos.png',
+        alt: 'Página de projetos práticos com cards de conteúdos para praticar.',
+      },
+      {
+        label: 'Cursos',
+        src: './images/projects/central-stack/cursos.png',
+        alt: 'Página de cursos e ferramentas com conteúdos publicados por categoria.',
+      },
+    ],
+    highlights: [
+      { icon: 'fa-route', label: 'Rotas organizadas' },
+      { icon: 'fa-layer-group', label: 'Componentes reutilizáveis' },
+      { icon: 'fa-database', label: 'Dados centralizados' },
+      { icon: 'fa-mobile-screen-button', label: 'Layout responsivo' },
+      { icon: 'fa-code', label: 'Blocos de código' },
+      { icon: 'fa-palette', label: 'Identidade visual própria' },
+      { icon: 'fa-cloud-arrow-up', label: 'Deploy Vercel' },
+      { icon: 'fa-folder-tree', label: 'Estrutura escalável' },
+    ],
+    process: [
+      'O projeto foi estruturado como uma plataforma própria de conteúdo, com foco em clareza visual, organização editorial e expansão gradual de artigos técnicos.',
+      'As decisões de interface e arquitetura priorizaram uma experiência leve, responsiva e fácil de manter, usando dados centralizados e componentes reutilizáveis.',
+    ],
+    differentials: [
+      'Foco editorial em tecnologia',
+      'Arquitetura orientada a dados',
+      'Interface responsiva',
+      'Componentes reutilizáveis',
+      'Organização por categorias',
+      'Base preparada para novos artigos',
+    ],
+  },
 };
 
 const formationPrograms = {
@@ -514,16 +619,29 @@ const formationPrograms = {
   supabase: {
     theme: 'supabase',
     category: 'Dados & backend',
-    status: 'Cursando',
-    title: 'Supabase / Banco de Dados',
-    provider: 'Comunidade Hashtag',
+    status: 'Completo',
+    title: 'Supabase Impressionador',
+    provider: 'Hashtag Treinamentos - 7 horas',
     summary:
-      'Curso em andamento voltado ao aprofundamento em banco de dados utilizando Supabase em aplicações modernas.',
-    tags: ['Supabase', 'Banco de Dados'],
-    skills: ['Supabase', 'Banco de Dados'],
+      'Formação concluída em Supabase com foco em banco de dados, autenticação, perfis, segurança com RLS, lógica no banco e automações.',
+    tags: ['Supabase', 'Banco de Dados', 'Auth', 'RLS', 'Make.com'],
+    skills: ['Supabase', 'Banco de Dados', 'Autenticação', 'RLS', 'Recursos avançados', 'Make.com'],
     modules: [
-      'Formação em andamento com foco informado em banco de dados utilizando Supabase.',
+      'Bem-vindo e setup.',
+      'Banco de Dados na prática.',
+      'Autenticação e perfis.',
+      'Segurança com RLS.',
+      'Lógica no banco com IA.',
+      'Recursos avançados.',
+      'FlutterFlow para app do cliente.',
+      'Automação com Make.com.',
+      'Finalização do curso.',
     ],
+    document: {
+      title: 'Certificado de conclusão',
+      src: './documents/formation/supabase-impressionador-certificado.pdf',
+      action: 'Abrir certificado',
+    },
   },
   balf: {
     theme: 'balf',
@@ -595,6 +713,7 @@ const renderCase = (caseId) => {
     'case-modal--media',
     'case-modal--church',
     'case-modal--prisma',
+    'case-modal--central',
   );
   caseModal.classList.add(`case-modal--${selectedCase.theme}`, 'is-open');
   caseModal.setAttribute('aria-hidden', 'false');
@@ -658,7 +777,10 @@ const renderCase = (caseId) => {
   const galleryShots = galleryLabels.map((item, index) => {
     const label = typeof item === 'string' ? item : item.label;
     const shot = document.createElement('div');
-    shot.className = `gallery-shot${index === 0 ? ' gallery-shot--wide' : ''}${typeof item === 'string' ? '' : ' gallery-shot--media'}`;
+    const layoutClass = typeof item === 'string' || !item.layout
+      ? ''
+      : ` gallery-shot--${item.layout}`;
+    shot.className = `gallery-shot${index === 0 ? ' gallery-shot--wide' : ''}${typeof item === 'string' ? '' : ' gallery-shot--media'}${layoutClass}`;
 
     if (typeof item !== 'string') {
       const image = document.createElement('img');
@@ -685,6 +807,10 @@ const renderCase = (caseId) => {
   caseFields.gallery.classList.toggle(
     'case-gallery--two',
     hasGalleryMedia && galleryLabels.length === 2,
+  );
+  caseFields.gallery.classList.toggle(
+    'case-gallery--desktop',
+    selectedCase.theme === 'central',
   );
   caseFields.gallery.replaceChildren(...galleryShots);
 

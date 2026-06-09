@@ -672,6 +672,16 @@ h1 {
     radial-gradient(circle at 22% 92%, rgba(102, 72, 190, 0.24), transparent 40%),
     linear-gradient(145deg, rgba(112, 73, 205, 0.12), rgba(8, 13, 26, 0.45));
 }
+.project-card--central {
+  --project-accent: #22d3ee;
+  --project-accent-rgb: 34, 211, 238;
+}
+.project-card--central .project-cover {
+  background:
+    radial-gradient(circle at 78% 18%, rgba(34, 211, 238, 0.2), transparent 38%),
+    radial-gradient(circle at 18% 82%, rgba(37, 99, 235, 0.16), transparent 42%),
+    linear-gradient(145deg, rgba(14, 165, 233, 0.08), rgba(8, 13, 26, 0.45));
+}
 .project-card--labs {
   --project-accent: #94a3b8;
   --project-accent-rgb: 148, 163, 184;
@@ -728,6 +738,9 @@ h1 {
 }
 .project-card--prisma .project-cover--media img {
   object-position: center 22%;
+}
+.project-card--central .project-cover--media img {
+  object-position: center top;
 }
 .project-card:hover .project-cover--media img {
   transform: scale(1.035);
@@ -950,6 +963,79 @@ h1 {
   background: linear-gradient(90deg, rgba(96, 165, 250, 0.55), rgba(148, 163, 184, 0.28));
 }
 
+.cover-central {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  min-height: 150px;
+  padding: 15px;
+  border: 1px solid rgba(34, 211, 238, 0.18);
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, rgba(34, 211, 238, 0.08), rgba(37, 99, 235, 0.04)),
+    rgba(8, 13, 26, 0.72);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+.cover-central::before {
+  content: '';
+  position: absolute;
+  inset: 15px;
+  border-radius: 7px;
+  background:
+    linear-gradient(rgba(34, 211, 238, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(34, 211, 238, 0.08) 1px, transparent 1px);
+  background-size: 32px 32px;
+  opacity: 0.34;
+  pointer-events: none;
+}
+.cover-central-top,
+.cover-central-hero,
+.cover-central-grid {
+  position: relative;
+}
+.cover-central-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  color: rgba(255, 255, 255, 0.74);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+}
+.cover-central-top i {
+  color: var(--project-accent);
+}
+.cover-central-hero {
+  margin-bottom: 20px;
+}
+.cover-central-hero strong {
+  display: block;
+  color: #fff;
+  font: 800 25px/1 'Syne', sans-serif;
+  letter-spacing: 0;
+}
+.cover-central-hero small {
+  display: block;
+  margin-top: 7px;
+  color: rgba(255, 255, 255, 0.56);
+  font-size: 11px;
+}
+.cover-central-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+.cover-central-grid span {
+  padding: 8px;
+  border: 1px solid rgba(34, 211, 238, 0.15);
+  border-radius: 6px;
+  background: rgba(34, 211, 238, 0.055);
+  color: rgba(255, 255, 255, 0.74);
+  font-size: 10px;
+  text-align: center;
+}
+
 .project-card-content {
   flex: 1;
   display: flex;
@@ -1087,6 +1173,22 @@ body.case-modal-open { overflow: hidden; }
   --case-accent: #9a6bff;
   --case-accent-rgb: 154, 107, 255;
 }
+.case-modal--central {
+  --case-accent: #22d3ee;
+  --case-accent-rgb: 34, 211, 238;
+}
+.case-modal--central .case-hero-cover {
+  background:
+    radial-gradient(circle at 78% 20%, rgba(34, 211, 238, 0.2), transparent 39%),
+    radial-gradient(circle at 18% 84%, rgba(37, 99, 235, 0.14), transparent 42%),
+    linear-gradient(135deg, rgba(14, 165, 233, 0.08), rgba(255, 255, 255, 0.025));
+}
+.case-modal--central .case-visual-feature {
+  background:
+    linear-gradient(90deg, rgba(34, 211, 238, 0.16), transparent 70%),
+    repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.04) 0 1px, transparent 1px 28px),
+    rgba(255, 255, 255, 0.035);
+}
 .case-modal--prisma .case-hero-cover {
   background:
     radial-gradient(circle at 78% 20%, rgba(154, 107, 255, 0.22), transparent 39%),
@@ -1190,6 +1292,9 @@ body.case-modal-open { overflow: hidden; }
   height: 300px;
   object-fit: cover;
   object-position: center 20%;
+}
+.case-modal--central .case-cover-image {
+  object-position: center top;
 }
 .case-visual-panel {
   width: 100%;
@@ -1418,6 +1523,46 @@ body.case-modal-open { overflow: hidden; }
 .case-gallery--screens.case-gallery--two {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   max-width: 680px;
+}
+.case-gallery--desktop {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.case-gallery--desktop .gallery-shot--wide {
+  grid-column: 1 / -1;
+}
+.case-gallery--desktop .gallery-shot--media {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 8px;
+  height: auto;
+  padding: 8px;
+  aspect-ratio: auto;
+  background: rgba(8, 13, 26, 0.5);
+}
+.case-gallery--desktop .gallery-shot--media img {
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: 5px;
+}
+.case-gallery--desktop .gallery-shot--panorama {
+  grid-column: 1 / -1;
+  aspect-ratio: auto;
+}
+.case-gallery--desktop .gallery-shot--panorama img {
+  aspect-ratio: 21 / 5;
+}
+.case-gallery--desktop .gallery-shot--media span {
+  position: static;
+  align-self: flex-start;
+  max-width: 100%;
+  padding: 4px 8px;
+  background: rgba(var(--case-accent-rgb), 0.08);
+  color: var(--text2);
+  font-size: 10px;
+  line-height: 1.2;
 }
 .gallery-shot {
   position: relative;
@@ -2585,6 +2730,9 @@ footer {
   .case-gallery--screens .gallery-shot--wide { grid-column: auto; }
   .gallery-shot--media { height: 400px; }
   .case-gallery--expanded .gallery-shot--wide { grid-column: 1 / -1; }
+  .case-gallery--desktop .gallery-shot--media { height: auto; }
+  .case-gallery--desktop .gallery-shot--wide { grid-column: 1 / -1; }
+  .case-gallery--desktop .gallery-shot--panorama { grid-column: 1 / -1; }
   .gallery-shot--wide { grid-column: 1 / -1; }
 
   h2 { font-size: 26px; }
@@ -2620,6 +2768,21 @@ footer {
   .case-gallery--expanded .gallery-shot--wide { grid-column: auto; }
   .gallery-shot--wide { grid-column: auto; }
   .gallery-shot--media { height: 510px; }
+  .case-gallery--desktop .gallery-shot--media {
+    height: auto;
+    aspect-ratio: auto;
+  }
+  .case-gallery--desktop .gallery-shot--wide { grid-column: auto; }
+  .case-gallery--desktop .gallery-shot--panorama {
+    grid-column: auto;
+    aspect-ratio: auto;
+  }
+  .case-gallery--desktop .gallery-shot--media img {
+    aspect-ratio: 16 / 10;
+  }
+  .case-gallery--desktop .gallery-shot--panorama img {
+    aspect-ratio: 18 / 5;
+  }
   .case-gallery--screens.case-gallery--two {
     grid-template-columns: 1fr;
     max-width: none;
